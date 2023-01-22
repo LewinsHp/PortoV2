@@ -1,0 +1,38 @@
+body {
+  min-height: 1200px;
+  background-image: url("https://d1ebn1hssciovn.cloudfront.net/prod/wp-content/uploads/2017/04/15170854/rsz_02.jpg");
+  background-repeat:no-repeat;
+  height:541px;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+}
+.home-project__graphics {
+  width: 57.5%;
+}
+
+.jumbotron {
+  padding: 7rem 1rem;
+}
+mark {
+  --color1: springgreen;
+  --color2: springgreen;
+  --bg-height: 40%;
+
+  all: unset;
+  background-image: linear-gradient(var(--color1), var(--color2));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 var(--bg-height);
+  animation: highlight 1800ms 1 ease-out;
+  animation-fill-mode: forwards;
+  animation-play-state: play;
+}
+
+@keyframes highlight {
+  to {
+    background-size: 100% var(--bg-height);
+  }
+}
+
